@@ -1,0 +1,132 @@
+/* 1. Estilos generales de la pagina */
+body {
+    font-family: Arial, sans-serif; /*Tipo de letra*/
+    margin: 0; /*Margen*/
+    padding: 0;
+    background-color: #000000; /*Color de fondo*/
+    color: #dcfcf9; /*Color del texto*/
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: rgb(0, 29, 109);;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 10;
+    color:white;
+}
+
+/*3. Menú de navegación */
+nav {
+    background-color: rgb(193, 207, 185); /*Fondo de la barra de menú*/
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas de la lista*/
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+nav ul li{
+    display: inline-block; /* pone los elementos en fila, uno al lado del otro*/
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /*Subraya el enlace al pasar el mouse*/
+}
+
+/*4. Contener principal*/
+.contenedor{
+    display: flex; /* Activa el modo flex*/
+    flex-wrap: wraps; /* permite que las filas se adapten segun el tamaño de la pantalla*/
+    gap: 20px;/* Espacio entre la seccion y el aside*/
+    padding: 30px;
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3;                /* ocupa más espacio que el aside */
+    background-color: rgb(32, 66, 160);
+    padding: 15px;
+    border-radius: 15px;}
+
+    /* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1;                /* ocupa menos espacio que la sección */
+    background-color:  rgb(32, 66, 160);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* une los bordes de las celdas */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:darkblue;
+}
+
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: lightblue;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #023c53;
+}
+
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+
+
